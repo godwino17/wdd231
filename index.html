@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD231: Course Home Page | Godwin Inyang</title>
     <meta name="author" content="Godwin Inyang">
-    <meta name="description" content="Explore the personal course home page of Godwin Inyang for WDD 231 - Web Frontend Development I. View projects, assignment, and frontend web development progress.">
+    <meta name="description" content="Explore the personal course home page of Godwin Inyang for WDD231 - Web Frontend Development I. View projects, assignment, and my Web development progress.">
 
     <!-- Google font API -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,68 +25,74 @@
 
 </head>
 <body>
-    <header>
-        <img src="images/globe.svg" alt="global icon" width="16" height="16">
-        <span>Godwin | WDD 231 Course Homepage</span>
-        <button id="nav-btn" class="nav-btn" aria-label="Main navigation button"></button>
-    </header>
-
-    <nav id="menu">
-        <ul>
-            <li class="current"><a href="#">Home</a></li>
-            <li><a href="#">Chamber Project</a></li>
-            <li><a href="#">Final Project</a></li>
-        </ul>
-    </nav>
-
-    <main>
-        <h1>Home</h1>
-
-        <div class="grid-cnt">
-            <section class="sect1">
-                <h2>About Me</h2>
-                <p>Hi 👋🏼, I'm Godwin Inyang from Uyo, Nigeria studying software development at BYU-Idaho through BYU Pathway.</p>
-                <p>I'm in WDD231: Web Frontend Development I — my last course for the Web & Computer Programming Certificate.</p>
-                <p>My goal is to master frontend fundamentals and build better websites.</p>
-                <p class="para">I'm also a phone technician, and i love football.</p>
-            </section>
-            
-            <section class="sect2">
-                <h2>My Photo</h2>
-                <picture>
-                    <source srcset="images/udoh-large.webp" media="(min-width: 1000px)">
-                    <source srcset="images/udoh-medium.webp" media="(min-width: 500px)">
-                    <img src="images/udoh-small.webp" alt="My photo" width="500" loading="lazy">
-                </picture>
-            </section>
-            
-            <section class="sect3">
-                <h2>Web and Computer Programming Certificate</h2>
-                <div class="course-type">
-                    <button id="all" type="button">All courses</button>
-                    <button id="cse" type="button">CSE courses</button>
-                    <button id="wdd" type="button">WDD courses</button>
-                </div>
-
-                <ul id="list">
-                </ul>
-
-                <p id="total-credits"></p>
-            </section>
-        </div>
-    </main>
-
-    <footer>
-        <div class="social">
-            <a href="https://web.facebook.com/profile.php?id=61576403897286" target="_blank"><img src="images/facebook.svg" alt="Facebook"></a>
-            <a href="https://github.com/godwino17" target="_blank"><img src="images/github.svg" alt="github"></a>
-            <a href="https://linkedin.com/in/godwin-inyang531" target="_blank"><img src="images/linkedin.svg" alt="Linkedin"></a>
-            <a href="https://wa.me/08056446193" target="_blank"><img src="images/whatsapp.svg" alt="WhatsApp"></a>
-        </div>
-        <div class="dark">
-            <p>&copy; <span id="year"></span> ※ Godwin Inyang ※ Uyo, Nigeria</p>
-            <p id="now"></p>
-        </div>
-    </footer>
+    <div class="container">
+        <header>
+            <img src="images/globe.svg" alt="global icon" width="16" height="16">
+            <span>Godwin | WDD 231 Course Homepage</span>
+            <button id="nav-btn" class="nav-btn" aria-label="Main navigation button"></button>
+        </header>
+        
+        <nav id="menu">
+            <ul>
+                <li class="current"><a href="#">Home</a></li>
+                <li><a href="#">Chamber Project</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+        
+        <main>
+            <h1>Home</h1>
+        
+            <div class="grid-cnt">
+                <section class="sect1">
+                    <h2>About Me</h2>
+                    <p>Hi 👋🏼, I'm Godwin Inyang from Uyo, Nigeria studying software development at BYU-Idaho through BYU
+                        Pathway.</p>
+                    <p>I'm in WDD231: Web Frontend Development I — my last course for the Web & Computer Programming
+                        Certificate.</p>
+                    <p>My goal is to master frontend fundamentals and build better websites.</p>
+                    <p class="para">I'm also a phone technician, and i love football.</p>
+                </section>
+        
+                <section class="sect2">
+                    <h2>My Photo</h2>
+                    <picture>
+                        <source srcset="images/udoh-large.webp" media="(min-width: 1000px)">
+                        <source srcset="images/udoh-medium.webp" media="(min-width: 500px)">
+                        <img src="images/udoh-small.webp" alt="My photo" width="500" loading="lazy">
+                    </picture>
+                </section>
+        
+                <section class="sect3">
+                    <h2>Web and Computer Programming Certificate</h2>
+                    <div class="course-type">
+                        <button id="all" type="button">All courses</button>
+                        <button id="cse" type="button">CSE courses</button>
+                        <button id="wdd" type="button">WDD courses</button>
+                    </div>
+        
+                    <ul id="list">
+                    </ul>
+        
+                    <p id="total-credits"></p>
+                </section>
+            </div>
+        </main>
+        
+        <footer>
+            <div class="social">
+                <a href="https://web.facebook.com/profile.php?id=61576403897286" target="_blank"><img src="images/facebook.svg"
+                        alt="Facebook"></a>
+                <a href="https://github.com/godwino17" target="_blank"><img src="images/github.svg" alt="github"></a>
+                <a href="https://linkedin.com/in/godwin-inyang531" target="_blank"><img src="images/linkedin.svg"
+                        alt="Linkedin"></a>
+                <a href="https://wa.me/08056446193" target="_blank"><img src="images/whatsapp.svg" alt="WhatsApp"></a>
+            </div>
+            <div class="dark">
+                <p>&copy; <span id="year"></span> ※ Godwin Inyang ※ Uyo, Nigeria</p>
+                <p id="now"></p>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>

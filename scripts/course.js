@@ -105,14 +105,14 @@ if (allBtn.addEventListener("click", () => {
         if (status === true) {
             let li = document.createElement("li");
             li.textContent = `✔️ ${title}${code}`;
-            li.style.backgroundColor = "rgba(2, 226, 2, 0.493)";
+            li.style.backgroundColor = "rgba(2, 226, 2, 0.29)";
             uoList.append(li);
         }
 
         else {
             let li = document.createElement("li");
             li.textContent = `✖️ ${title}${code}`;
-            li.style.backgroundColor = "rgba(255, 0, 0, 0.49)";
+            li.style.backgroundColor = "rgba(255, 0, 0, 0.29)";
             uoList.append(li);
         }
     }
@@ -141,14 +141,14 @@ if (cseBtn.addEventListener("click", () => {
         if (status === true) {
             let li = document.createElement("li");
             li.textContent = `✔️ ${title}${code}`;
-            li.style.backgroundColor = "rgba(2, 226, 2, 0.493)";
+            li.style.backgroundColor = "rgba(2, 226, 2, 0.29)";
             uoList.append(li);
         }
 
         else {
             let li = document.createElement("li");
             li.textContent = `✖️ ${title}${code}`;
-            li.style.backgroundColor = "rgba(255, 0, 0, 0.49)";
+            li.style.backgroundColor = "rgba(255, 0, 0, 0.29)";
             uoList.append(li);
         }
     }
@@ -177,14 +177,14 @@ if (wddBtn.addEventListener("click", () => {
         if (status === true) {
             let li = document.createElement("li");
             li.textContent = `✔️ ${title}${code}`;
-            li.style.backgroundColor = "rgba(2, 226, 2, 0.493)";
+            li.style.backgroundColor = "rgba(2, 226, 2, 0.29)";
             uoList.append(li);
         }
 
         else {
             let li = document.createElement("li");
             li.textContent = `✖️ ${title}${code}`;
-            li.style.backgroundColor = "rgba(255, 0, 0, 0.49)";
+            li.style.backgroundColor = "rgba(255, 0, 0, 0.29)";
             uoList.append(li);
         }
     }
