@@ -1,0 +1,24 @@
+{
+    "familyName":"Godwin's family",
+    "moveInDate": "7-03-2026",
+    "numberOfMembers": 3,
+    "VisitedByBishop": false,
+    "familyMembers": 
+    [
+        {
+            "name": "Godwin",
+            "gender": "male",
+            "birthdate": "May-26-1999"
+        },
+        {
+            "name": "Nehemiah",
+            "gender": "male",
+            "birthdate": "June-12-1980"
+        },
+        {
+            "name": "Anthony",
+            "gender": "male",
+            "birthdate": "April-3-1960"
+        }
+    ]
+}
