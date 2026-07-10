@@ -1,0 +1,83 @@
+[
+    {
+        "image": "https://ubsc.com.ng/assets/ubs-logo.jpeg",
+        "name": "Uyo Business School",
+        "address": "10 Aka Nung Oku Road",
+        "number": "+234-8131 534 196",
+        "website": "https://ubsc.com.ng/",
+        "membershipLevel": 2,
+        "category": "Business"
+    },
+    {
+        "image": "https://albannytechnologies.com/wp-content/uploads/2019/10/AlbannyTech-300x51.png",
+        "name": "Albanny Technologies",
+        "address": "15 Uyo Street",
+        "number": "+234-8333 534 196",
+        "website": "https://www.sortlist.com/l/uyo-akwa-ibom-ng",
+        "membershipLevel": 3,
+        "category": "Technology"
+    },
+    {
+        "image": "https://totalenergies.com/themes/custom/totalenergies_com/dist/img/logo_totalenergies.png",
+        "name": "Total Energies",
+        "address": "179 Ikot Ekpene Road",
+        "number": "+234-806 610 8299",
+        "website": "https://totalenergies.com",
+        "membershipLevel": 1,
+        "category": "Oil & Gas"
+    },
+    {
+        "image": "https://codekago.com/assets/img/custom/logo.svg",
+        "name": "Codekago Interactive",
+        "address": "101 Ikot Ekpene Road",
+        "number": "+234-888 610 8299",
+        "website": "https://www.selling.com/company-search/location--nigeria--akwa-ibom--uyo?page=1",
+        "membershipLevel": 3,
+        "category": "Technology"
+    },
+    {
+        "image": "https://www.sopromhotels.com/storage/general/logo-header.png",
+        "name": "Soprome Hotel & Suite",
+        "address": "93 Abak Road",
+        "number": "+234-888 610 8299",
+        "website": "https://www.sopromhotels.com/",
+        "membershipLevel": 1,
+        "category": "Hotel"
+    },
+    {
+        "image": "https://hycotech.com.ng/wp-content/uploads/2025/03/HYCO-1024x415.png",
+        "name": "Hyco Technology services",
+        "address": "2 Wellington Bassey Way",
+        "number": "+234-888 610 829N",
+        "website": "https://hycotech.com.ng",
+        "membershipLevel": 2,
+        "category": "Technology"
+    },
+    {
+        "image": "https://www.africa2trust.com/WBA/Logos/Logo-Placeholder.jpg",
+        "name": "Ab Fairland Pinnacle Engineering",
+        "address": "16 Utang Street",
+        "number": "+234-008 000 829N",
+        "website": "https://directory.org.ng/lga_akwa-ibom_uyo&page=1",
+        "membershipLevel": 1,
+        "category": "Engineering"
+    },
+    {
+        "image": "https://ik.imagekit.io/KolaboFort/wp-content/uploads/2026/01/cropped-cropped-cropped-KolaboFort_Flyer_form_20260117_083501_0000-removebg-preview-e1771279563888.png?tr=w-199,h-53",
+        "name": "Kolabofort",
+        "address": "28B Itu Road",
+        "number": "+234-008 000 829N",
+        "website": "https://www.kolabofort.com/",
+        "membershipLevel": 1,
+        "category": "Technology"
+    },
+    {
+        "image": "https://isatong.com.ng/wp-content/uploads/2016/04/Isatong-x1.png",
+        "name": "Isatong",
+        "address": "18c Abak road",
+        "number": "+234-000 000 829N",
+        "website": "https://isatong.com.ng/",
+        "membershipLevel": 3,
+        "category": "Business"
+    }
+]

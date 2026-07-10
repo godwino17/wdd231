@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uyo City Business Directory | Uyo Chamber of Commerce</title>
+    <meta name="author" content="Godwin Inyang">
+    <meta name="description" content="Browse a list of local business and organizations that belongs to the Uyo City Chamber of Commerce. Connect with trusted menbers in Uyo.">
+
+    <link rel="icon" href="images/chamber-favicon.ico">
+
+    <meta property="og:title" content="Uyo City Business Directory">
+    <meta property="og:description" content="Browse a list of local business and organizations that belongs to the Uyo City Chamber of Commerce. Connect with trusted menbers in Uyo.">
+    <meta property="og:image" content=""> <!-- FILL THIS CONTENT ❌-->
+    <meta property="og:url" content="https://godwino17.github.io/wdd231/chamber/directory.html">
+
+    <link rel="stylesheet" href="styles/normalise.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/chamber.js" defer></script>
+</head>
+
+<body>
+    <div class="directory">
+        <header>
+            <img src="images/chamber-logo.png" alt="Uyo Chamber of Commerce Logo" width="47">
+            <span>Uyo Chamber of Commerce</span>
+        
+            <button class="dark" id="dark" aria-label="toggle dark/light mode" type="button"><img src="images/toggle-dark.svg" alt="" width="24" height="24"></button>
+            <button class="hambtn" id="hambtn" aria-label="navigation button" type="button"></button>
+        
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Discover</a></li>
+                    <li><a class="current" href="directory.html">Directory</></li>
+                    <li><a href="#">Join</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <h1>Member List</h1>
+            <div>
+                <button id="grid" type="button">Grid view</button>
+                <button id="list" type="button">List view</button>
+            </div>
+
+            <div class="view">
+
+            </div>
+
+        </main>
+        
+        <footer>
+            <div>
+                <p class="block">Uyo Chamber of Commerce</p>
+                <p>10 Kelvin Lane Uyo</p>
+                <p>info@uyocc.org</p>
+                <p>+234 888-555-7524</p>
+            </div>
+
+            <div class="social">
+                <a href="https://web.facebook.com/profile.php?id=61576403897286" target="_blank"><img src="images/facebook.svg"
+                        alt="Facebook" width="32" height="32"></a>
+                <a href="https://web.twitter.com" target="_blank"><img src="images/twitter-x.svg"
+                        alt="twitter X" width="32" height="32"></a>
+                <a href="https://linkedin.com/in/godwin-inyang531" target="_blank"><img src="images/linkedin.svg"
+                        alt="Linkedin" width="32" height="32"></a>
+            </div>
+
+            <div>
+                <p>WDD231 Class Project</p>
+                <p>Godwin Inyang</p>
+                <p>&copy; <span id="year"></span> ※ Godwin Inyang ※ Uyo, Nigeria</p>
+                <p id="now"></p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
