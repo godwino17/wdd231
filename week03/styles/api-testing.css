@@ -1,0 +1,84 @@
+:root {
+    --bg-gradient: linear-gradient(135deg, #4a90e2, #50e3c2);
+    --text-color: #333333;
+    --card-bg: rgba(255, 255, 255, 0.9);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg-gradient);
+    color: var(--text-color);
+}
+
+h1 {
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+main {
+    background: var(--card-bg);
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    transition: transform 0.2s ease;
+}
+
+main:hover {
+    /* transform: translateY(-5px); */
+    transform: scale(1.20);
+}
+
+p {
+    font-size: 1.2rem;
+    margin: 0 0 1.5rem 0;
+}
+
+#current-temp {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #f5a623;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+figure {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#weather-icon {
+    width: 100px;
+    height: 100px;
+}
+
+#weather-icon[src]:not([src=""]) {
+    display: block;
+}
+
+figcaption {
+    font-size: 1.1rem;
+    color: #666666;
+    font-style: italic;
+    margin-top: 0.5rem;
+    text-transform: capitalize;
+}
+
+footer {
+    margin-top: 3rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+}
