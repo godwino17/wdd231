@@ -11,7 +11,7 @@
     }
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 620px) {
     /************************* HEADER ******************************/
     .hambtn {
         display: none;
@@ -64,7 +64,7 @@
 
     .directory .view {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     .directory .list {
@@ -93,3 +93,9 @@
 }
 
 
+@media screen and (min-width: 870px) {
+    .directory .view {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+    }
+}
