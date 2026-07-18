@@ -40,108 +40,110 @@ async function DisplayMembersCard() {
     const request = await fetch(membersData);
     const result = await request.json();
 
-    viewGrid.addEventListener('click', () => {
+    if (document.querySelector('.directory')) {
+        viewGrid.addEventListener('click', () => {
 
-        viewContainer.innerHTML = "";
+            viewContainer.innerHTML = "";
 
-        for (data of result) {
-            let image = data.image;
-            let name = data.name;
-            let address = data.address;
-            let phone = data.number;
-            let website = data.website;
+            for (data of result) {
+                let image = data.image;
+                let name = data.name;
+                let address = data.address;
+                let phone = data.number;
+                let website = data.website;
 
-            let section = document.createElement('section');
-            section.classList.remove('list');
-            section.classList.add('grid');
+                let section = document.createElement('section');
+                section.classList.remove('list');
+                section.classList.add('grid');
 
-            let sectionHeading = document.createElement('h2');
-            sectionHeading.textContent = name;
+                let sectionHeading = document.createElement('h2');
+                sectionHeading.textContent = name;
 
-            let sectionImage = document.createElement('img');
-            sectionImage.setAttribute('src', image);
-            sectionImage.setAttribute('alt', 'Company logo');
-            sectionImage.setAttribute('width', '90');
-            
-            let sectionAddress = document.createElement('p');
-            sectionAddress.innerHTML = `<span>ADDRESS:</span> ${address}`;
+                let sectionImage = document.createElement('img');
+                sectionImage.setAttribute('src', image);
+                sectionImage.setAttribute('alt', 'Company logo');
+                sectionImage.setAttribute('width', '90');
 
-            let sectionPhone = document.createElement('p');
-            sectionPhone.innerHTML = `<span>PHONE:</span> ${phone}`;
+                let sectionAddress = document.createElement('p');
+                sectionAddress.innerHTML = `<span>ADDRESS:</span> ${address}`;
 
-            let anchor = document.createElement('a')
-            anchor.innerHTML = website;
-            anchor.setAttribute('href', website);
-            let sectionURL = document.createElement('p');
-            sectionURL.innerHTML= `<span>URL:</span>`;
-            sectionURL.append(anchor);
+                let sectionPhone = document.createElement('p');
+                sectionPhone.innerHTML = `<span>PHONE:</span> ${phone}`;
 
-            const divP = document.createElement('div');
-            const divI = document.createElement('div');
+                let anchor = document.createElement('a')
+                anchor.innerHTML = website;
+                anchor.setAttribute('href', website);
+                let sectionURL = document.createElement('p');
+                sectionURL.innerHTML = `<span>URL:</span>`;
+                sectionURL.append(anchor);
 
-            divI.append(sectionImage);
-            divP.append(sectionAddress);
-            divP.append(sectionPhone);
-            divP.append(sectionURL);
+                const divP = document.createElement('div');
+                const divI = document.createElement('div');
 
-            section.append(sectionHeading);
-            
-            section.append(divI)
-            section.append(divP);
+                divI.append(sectionImage);
+                divP.append(sectionAddress);
+                divP.append(sectionPhone);
+                divP.append(sectionURL);
 
-            if (viewGrid) {
-                viewContainer.classList.remove('lines');
-                viewContainer.classList.add('view');
-                viewContainer.append(section);
+                section.append(sectionHeading);
+
+                section.append(divI)
+                section.append(divP);
+
+                if (viewGrid) {
+                    viewContainer.classList.remove('lines');
+                    viewContainer.classList.add('view');
+                    viewContainer.append(section);
+                }
             }
-        }
-    })
+        })
 
 
-    viewList.addEventListener('click', () => {
+        viewList.addEventListener('click', () => {
 
-        viewContainer.innerHTML = "";
+            viewContainer.innerHTML = "";
 
-        for (data of result) {
-            let name = data.name;
-            let address = data.address;
-            let phone = data.number;
-            let website = data.website;
+            for (data of result) {
+                let name = data.name;
+                let address = data.address;
+                let phone = data.number;
+                let website = data.website;
 
-            let section = document.createElement('section');
-            section.classList.remove('grid');
-            section.classList.add('list');
+                let section = document.createElement('section');
+                section.classList.remove('grid');
+                section.classList.add('list');
 
 
-            let sectionHeading = document.createElement('h2');
-            sectionHeading.textContent = name;
+                let sectionHeading = document.createElement('h2');
+                sectionHeading.textContent = name;
 
-            let sectionAddress = document.createElement('p');
-            sectionAddress.innerHTML = `<span>ADDRESS:</span> ${address}`;
+                let sectionAddress = document.createElement('p');
+                sectionAddress.innerHTML = `<span>ADDRESS:</span> ${address}`;
 
-            let sectionPhone = document.createElement('p');
-            sectionPhone.innerHTML = `<span>PHONE:</span> ${phone}`;
+                let sectionPhone = document.createElement('p');
+                sectionPhone.innerHTML = `<span>PHONE:</span> ${phone}`;
 
-            let anchor = document.createElement('a')
-            anchor.innerHTML = website;
-            anchor.setAttribute('href', website);
-            let sectionURL = document.createElement('p');
-            sectionURL.innerHTML = `<span>URL:</span>`;
-            sectionURL.append(anchor);
+                let anchor = document.createElement('a')
+                anchor.innerHTML = website;
+                anchor.setAttribute('href', website);
+                let sectionURL = document.createElement('p');
+                sectionURL.innerHTML = `<span>URL:</span>`;
+                sectionURL.append(anchor);
 
-            section.append(sectionHeading);
-            section.append(sectionAddress);
-            section.append(sectionPhone);
-            section.append(sectionURL);
+                section.append(sectionHeading);
+                section.append(sectionAddress);
+                section.append(sectionPhone);
+                section.append(sectionURL);
 
-            if (viewList) {
-                viewContainer.classList.remove('view');
-                viewContainer.classList.add('lines');
-                viewContainer.append(section);
+                if (viewList) {
+                    viewContainer.classList.remove('view');
+                    viewContainer.classList.add('lines');
+                    viewContainer.append(section);
+                }
+
             }
-
-        }
-    })
+        })
+    }
     
 }
 

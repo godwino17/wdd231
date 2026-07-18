@@ -57,7 +57,7 @@
         padding: 0;
     }
 
-    /************************* MAIN ******************************/
+    /************************* DIRECTORY MAIN ******************************/
     .directory h1 {
         padding: 0 0 1rem .5rem;
     }
@@ -90,8 +90,67 @@
         justify-content: space-between;
 
     }
-}
 
+    /************************* HOME MAIN ******************************/
+    .home main {
+        display: grid;
+        grid-template-columns: 2fr 1fr; 
+        gap: 1rem;
+    }
+
+    .hero-img {
+        grid-column: 1 / -1;
+    }
+
+    .hero-img h1 {
+        font-size: 2.5rem;
+        width: 70%;
+        transform: translate(-50%, -60%);
+    }
+
+    .hero-img a {
+        bottom: 30px;
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
+    }
+
+    .hero-img a:hover {
+        background-color: #003674;
+        color: white;
+    }
+
+    .events {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        margin: 0;
+    }
+
+    .events h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .weather {
+        grid-column: 2/3;
+        /* align-self: start; */
+    }
+
+    .member-cnt {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+
+    .member-cnt h2 {
+        grid-column: 1/4;
+    }
+
+    .member-cnt img {
+        border-radius: 50px;
+    }
+}
 
 @media screen and (min-width: 870px) {
     .directory .view {
