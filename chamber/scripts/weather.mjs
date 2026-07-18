@@ -1,10 +1,13 @@
 import showMemberCard from "./members-card.mjs";
 
 const temp = document.querySelector('.c-temp');
-const weIcon = document.querySelector('.w-icon');
+const figureImg = document.querySelector('figure');
 const tempDes = document.querySelector('figcaption');
 const toDate = document.querySelector('.today-date');
 
+const div1 = document.querySelector('.divI');
+const div2 = document.querySelector('.divII');
+const div3 = document.querySelector('.divIII');
 
 const lat = 7.91;
 const lon = 5.02;
@@ -44,8 +47,12 @@ async function getWeatherInfos() {
         toDate.textContent = displayDate(0);
 
         const iconPath = `https://openweathermap.org/img/wn/${liveData.weather[0].icon}@2x.png`;
+        const weIcon = document.createElement('img');
+        weIcon.classList.add('.w-icon');
         weIcon.setAttribute('src', iconPath);
         weIcon.setAttribute('alt', liveData.weather[0].description);
+        figureImg.append(weIcon);
+
 
 
 
@@ -60,9 +67,13 @@ async function getWeatherInfos() {
         document.querySelector('.day1-date').textContent = displayDate(1);
 
         const dayOneIconURL = `https://openweathermap.org/img/wn/${forecastData.list[8].weather[0].icon}@2x.png`;
-        const forecastIcon1= document.querySelector('.day1-icon');
+        const forecastIcon1 = document.createElement('img');
+        forecastIcon1.classList.add('.day1-icon');
         forecastIcon1.setAttribute('src', dayOneIconURL);
         forecastIcon1.setAttribute('alt', forecastData.list[8].weather[0].description);
+        div1.append(forecastIcon1);
+
+
         document.querySelector('.day1-descrip').textContent = forecastData.list[8].weather[0].description;
         document.querySelector('.day1-temp').textContent = `${forecastData.list[8].main.temp}℃`;
 
@@ -70,9 +81,13 @@ async function getWeatherInfos() {
         document.querySelector('.day2-date').textContent = displayDate(2);
 
         const dayTwoIconURL = `https://openweathermap.org/img/wn/${forecastData.list[16].weather[0].icon}@2x.png`;
-        const forecastIcon2 = document.querySelector('.day2-icon');
+        const forecastIcon2 = document.createElement('img');
+        forecastIcon2.classList.add('.day2-icon');
         forecastIcon2.setAttribute('src', dayTwoIconURL);
         forecastIcon2.setAttribute('alt', forecastData.list[16].weather[0].description);
+        div2.append(forecastIcon2);
+
+
         document.querySelector('.day2-descrip').textContent = forecastData.list[16].weather[0].description;
         document.querySelector('.day2-temp').textContent = `${forecastData.list[16].main.temp}℃`;
 
@@ -81,9 +96,13 @@ async function getWeatherInfos() {
         document.querySelector('.day3-date').textContent = displayDate(3);
 
         const dayThreeIconURL = `https://openweathermap.org/img/wn/${forecastData.list[24].weather[0].icon}@2x.png`;
-        const forecastIcon3 = document.querySelector('.day3-icon');
+        const forecastIcon3 = document.createElement('img');
+        forecastIcon3.classList.add('.day3-icon');
         forecastIcon3.setAttribute('src', dayThreeIconURL);
         forecastIcon3.setAttribute('alt', forecastData.list[24].weather[0].description);
+        div3.append(forecastIcon3);
+
+
         document.querySelector('.day3-descrip').textContent = forecastData.list[24].weather[0].description;
         document.querySelector('.day3-temp').textContent = `${forecastData.list[24].main.temp} ℃`;
     }

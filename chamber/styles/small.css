@@ -251,18 +251,14 @@ footer P {
 
 /*********************** HOME PAGE **************************/
 .home main {
-    /* ➕ */
     display: flex;
     flex-direction: column;
     gap: 2rem;
     max-width: 100%;
 }
 .hero-img {
-    /* ➕ */
     position: relative;
     text-align: center;
-    /* overflow: hidden; */
-    /* border-radius: 12px; */
 }
 
 .hero-img img {
@@ -274,7 +270,6 @@ footer P {
 }
 
 .hero-img h1 {
-    /* ➕ */
     position: absolute;
     top: 35%;
     left: 50%;
@@ -290,7 +285,6 @@ footer P {
 }
 
 .hero-img a {
-    /* ➕ */
     position: absolute;
     bottom: 15px;
     left: 50%;
@@ -353,7 +347,6 @@ footer P {
 }
 
 .future-temp  div {
-    /* ➕ */
     flex: 1 1 100%;
     background: rgba(255, 255, 255, 0.1);
     padding: 0.5rem;
@@ -363,11 +356,7 @@ footer P {
 
 .day1-date, .day2-date, .day3-date {
     font-weight: 500;
-}
-
-.day1-icon, .day2-icon, .day3-icon {
-    width: 70px;
-    height: 70px;
+    padding-bottom: 1rem;
 }
 
 .day1-descrip, .day2-descrip, .day3-descrip {
@@ -377,7 +366,6 @@ footer P {
 }
 
 .events {
-    /* ➕ */
     background-color: #f4f7f6;
     padding: 1rem;
     border-radius: 12px;
@@ -385,14 +373,12 @@ footer P {
 }
 
 .events h2 {
-    /* ➕ */
     font-size: 1.3rem;
     color: #003674;
     margin-bottom: 1rem;
 }
 
 .events section {
-    /* ➕ */
     background: white;
     padding: 1rem;
     margin-bottom: 1rem;
@@ -401,7 +387,6 @@ footer P {
 }
 
 .events h3 {
-    /* ➕ */
     font-size: 1.1rem;
     color: #333;
     margin-top: 0;
@@ -409,19 +394,16 @@ footer P {
 }
 
 .events p {
-    /* ➕ */
     font-size: 0.9rem;
     margin: 0.3rem 0;
 }
 
 .events p span {
-    /* ➕ */
     font-weight: bold;
     color: #003674;
 }
 
 details {
-    /* ➕ */
     margin-top: 0.5rem;
     background: #f9f9f9;
     padding: 0.5rem;
@@ -430,7 +412,6 @@ details {
 }
 
 summary {
-    /* ➕ */
     font-size: 0.85rem;
     font-weight: 600;
     color: #003674;
@@ -438,7 +419,6 @@ summary {
 }
 
 details p {
-    /* ➕ */
     padding-top: 0.5rem;
     line-height: 1.4;
     color: #555;
