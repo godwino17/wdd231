@@ -179,6 +179,32 @@ section:nth-child(3) {
     font-style: italic;
 }
 
+dialog {
+    border: 1px solid rgb(0 0 0 / 10%);
+    border-radius: .25rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+    margin:  0 auto;
+    align-self: center;
+}
+
+::backdrop {
+    background-color: rgb(0 0 0 / 50%);
+}
+
+dialog button {
+    position: absolute;
+    top: 18px;
+    right: 23px;
+    width: 44px;
+    padding: .1rem;
+    font-size: large;
+    display: block;
+}
+
 /********************* FOOTER *********************/
 footer {
     padding: .5rem;

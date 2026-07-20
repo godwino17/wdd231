@@ -84,6 +84,8 @@ const allBtn = document.getElementById("all"); // Grab "All" button from DOM
 const cseBtn = document.getElementById("cse"); // Grab "CSE"  button from DOM
 const wddBtn = document.getElementById("wdd"); // Grab "WDD" button from DOM
 
+const courseDetails = document.querySelector('#courseDetails');
+
 
 // Wait for "All Courses" button to be clicked
 if (allBtn.addEventListener("click", () => {
@@ -95,26 +97,30 @@ if (allBtn.addEventListener("click", () => {
 
     let score = 0;
 
-    for (course of courses) {
+    for (const course of courses) {
         let title = course.subject;
         let code = course.number;
         let status = course.completed;
         let credits = course.credits;
         score += credits;
 
+        const li = document.createElement("li");
+        
         if (status === true) {
-            let li = document.createElement("li");
             li.textContent = `✔️ ${title}${code}`;
             li.style.backgroundColor = "rgba(2, 226, 2, 0.29)";
-            uoList.append(li);
         }
 
         else {
-            let li = document.createElement("li");
             li.textContent = `✖️ ${title}${code}`;
             li.style.backgroundColor = "rgba(255, 0, 0, 0.29)";
-            uoList.append(li);
         }
+
+        li.addEventListener('click', () => {
+            displayCourseDetails(course);
+        });
+
+        uoList.append(li);
     }
     document.getElementById("total-credits").textContent = `The total numbers of credits for the courses listed above is: ${score}`;
 }));
@@ -131,26 +137,30 @@ if (cseBtn.addEventListener("click", () => {
 
     let score = 0;
 
-    for (course of cseCourses) {
+    for (const course of cseCourses) {
         let title = course.subject;
         let code = course.number;
         let status = course.completed;
         let credits = course.credits;
         score += credits;
 
+        const li = document.createElement("li");
+
         if (status === true) {
-            let li = document.createElement("li");
             li.textContent = `✔️ ${title}${code}`;
             li.style.backgroundColor = "rgba(2, 226, 2, 0.29)";
-            uoList.append(li);
         }
 
         else {
-            let li = document.createElement("li");
             li.textContent = `✖️ ${title}${code}`;
             li.style.backgroundColor = "rgba(255, 0, 0, 0.29)";
-            uoList.append(li);
         }
+
+        li.addEventListener('click', () => {
+            displayCourseDetails(course);
+        });
+
+        uoList.append(li);
     }
     document.getElementById("total-credits").textContent = `The total numbers of credits for the courses listed above is: ${score}`;
 }));
@@ -167,26 +177,50 @@ if (wddBtn.addEventListener("click", () => {
 
     let score = 0;
 
-    for (course of wddCourses) {
+    for (const course of wddCourses) {
         let title = course.subject;
         let code = course.number;
         let status = course.completed;
         let credits = course.credits;
         score += credits;
 
+        const li = document.createElement("li");
         if (status === true) {
-            let li = document.createElement("li");
             li.textContent = `✔️ ${title}${code}`;
             li.style.backgroundColor = "rgba(2, 226, 2, 0.29)";
-            uoList.append(li);
         }
 
         else {
-            let li = document.createElement("li");
             li.textContent = `✖️ ${title}${code}`;
             li.style.backgroundColor = "rgba(255, 0, 0, 0.29)";
-            uoList.append(li);
         }
+
+        li.addEventListener('click', () => {
+            displayCourseDetails(course);
+        });
+
+        uoList.append(li);
     }
     document.getElementById("total-credits").textContent = `The total numbers of credits for the courses listed above is: ${score}`;
 }));
+
+
+// Course Modal Section
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies:</strong> ${course.technology.join(', ')}</p>
+  `;
+    courseDetails.showModal();
+
+    document.getElementById('closeModal').addEventListener("click", () => {
+        courseDetails.close();
+    });
+}
+
