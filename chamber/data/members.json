@@ -23,7 +23,7 @@
         "address": "179 Ikot Ekpene Road",
         "number": "+234-806 610 8299",
         "website": "https://totalenergies.com",
-        "membershipLevel": "Member",
+        "membershipLevel": "Bronze",
         "category": "Oil & Gas"
     },
     {
@@ -41,7 +41,7 @@
         "address": "93 Abak Road",
         "number": "+234-888 610 8299",
         "website": "https://www.sopromhotels.com/",
-        "membershipLevel": "Member",
+        "membershipLevel": "Bronze",
         "category": "Hotel"
     },
     {
@@ -59,7 +59,7 @@
         "address": "16 Utang Street",
         "number": "+234-008 000 829N",
         "website": "https://directory.org.ng/lga_akwa-ibom_uyo&page=1",
-        "membershipLevel": "Member",
+        "membershipLevel": "Bronze",
         "category": "Engineering"
     },
     {
@@ -68,7 +68,7 @@
         "address": "28B Itu Road",
         "number": "+234-008 000 829N",
         "website": "https://www.kolabofort.com/",
-        "membershipLevel": "Member",
+        "membershipLevel": "Non profit",
         "category": "Technology"
     },
     {
