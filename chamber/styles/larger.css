@@ -132,7 +132,11 @@
 
     .weather {
         grid-column: 2/3;
-        /* align-self: start; */
+    }
+
+    .future-temp {
+        display: flex;
+        gap: .5rem;
     }
 
     .member-cnt {
@@ -149,6 +153,24 @@
 
     .member-cnt img {
         border-radius: 50px;
+    }
+
+    /************************* JOIN MAIN ******************************/
+    .join main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .join main > section {
+        margin-top: 3rem;
+    }
+
+    .join main section section {
+        margin-bottom: 1.5rem;
+    }
+
+    .form-cnt {
+        padding-bottom: 10px;
     }
 }
 

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us | Uyo City Chamber of Commerce</title>
+    <meta name="author" content="Godwin Inyang">
+    <meta name="description"
+        content="Become part of Uyo's premier business network. Connect with local leaders, boost your business growth, and access exclusive community updates. Apply now!">
+
+    <!-- Favorite Icon -->
+    <link rel="icon" href="images/chamber-favicon.ico">
+
+    <!-- Google Font API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!--  Facebook meta information -->
+    <meta property="og:title" content="Join Us at Uyo City Chamber of commerce">
+    <meta property="og:description"
+        content="Become part of Uyo's premier business network. Connect with local leaders, boost your business growth, and access exclusive community updates. Apply now!">
+    <meta property="og:image" content="https://godwino17.github.io/wdd231/chamber/images/chamber-logo.png">
+    <meta property="og:url" content="https://godwino17.github.io/wdd231/chamber/join.html">
+
+    <!-- Style sheets -->
+    <link rel="stylesheet" href="styles/normalise.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- Global Scripts -->
+    <script src="scripts/chamber.js" defer></script>
+
+    <!-- Page specific script -->
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+    <div class="join">
+        <header>
+            <img src="images/chamber-logo.png" alt="Uyo Chamber of Commerce Logo" width="47">
+            <span>Uyo Chamber of Commerce</span>
+
+            <button class="dark" id="dark" aria-label="toggle dark/light mode" type="button"><img
+                    src="images/toggle-dark.svg" alt="" width="24" height="24"></button>
+            <button class="hambtn" id="hambtn" aria-label="navigation button" type="button"></button>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" title="Home">Home</a></li>
+                    <li><a href="#">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a class="current" aria-current="page" href="join.html">Join</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="form-cnt">
+                <h1>Membership Application Form</h1>
+                <form method="get" action="thankyou.html">
+                    <label for="firstName">First Name *</label>
+                    <input type="text" name="firstName" id="firstName" title="Enter your first name" required autocomplete="given-name">
+                
+                    <label for="lastname">Last Name *</label>
+                    <input type="text" name="lastName" id="lastname" title="Enter your last name" required autocomplete="family-name">
+                
+                    <label for="org">Organization Title</label>
+                    <input type="text" id="org" name="org"
+                        title="Letters, spaces and hyphens only. Minimum 7 characters"
+                        autocomplete="organization-title" minlength="7" pattern="[A-Za-z\s\-]{7,}+">
+                
+                    <label for="email">Email *</label>
+                    <input type="email" name="email" id="email" title="Enter email address" autocomplete="email"
+                         required>
+                
+                    <label for="tel">Phone Number *</label>
+                    <input type="tel" name="phone" id="tel" pattern="[0-9]{11}" maxlength="11" title="Enter phone number" autocomplete="tel-national" required>
+                
+                    <label for="orgName">Business Name *</label>
+                    <input type="text" name="orgName" id="orgName" title="Enter organization name" autocomplete="organization" required>
+                
+                    <label for="level">Membership Level *</label>
+                    <select name="level" id="level" required>
+                        <option id="value" value="" selected disabled>Select Membership Level...</option>
+                        <option value="np">Non profit</option>
+                        <option value="bronze">Bronze</option>
+                        <option value="silver">Silver</option>
+                        <option value="gold">Gold</option>
+                    </select>
+                
+                    <label for="desc">Business Description</label>
+                    <textarea name="desc" id="desc" title="Brief description of your organization"></textarea>
+                
+                    <input type="hidden" name="time" id="time">
+                
+                    <input type="submit" value="Apply for Membership">
+                </form>
+            </div>
+
+            <section>
+                <h2>Membership Levels</h2>
+
+                <section class="non">
+                    <h3>Non Profit Membership Level</h3>
+                    <button>Learn More</button>
+                </section>
+
+                <section class="bronze">
+                    <h3>Bronze Membership Level</h3>
+                    <button>Learn More</button>
+                </section>
+
+                <section class="silver">
+                    <h3>Silver Membership Level</h3>
+                    <button>Learn More</button>
+                </section>
+
+                <section class="gold">
+                    <h3>Gold Membership Level</h3>
+                    <button>Learn More</button>
+                </section>
+            </section>
+
+            <dialog id="learnMore">
+            </dialog>
+        </main>
+
+        <footer>
+            <div>
+                <p class="block">Uyo Chamber of Commerce</p>
+                <p>10 Kelvin Lane Uyo</p>
+                <p>info@uyocc.org</p>
+                <p>+234 888-555-7524</p>
+            </div>
+
+            <div class="social">
+                <a href="https://web.facebook.com/profile.php?id=61576403897286" target="_blank"><img
+                        src="images/facebook.svg" alt="Facebook" width="32" height="32"></a>
+                <a href="https://web.twitter.com" target="_blank"><img src="images/twitter-x.svg" alt="twitter X"
+                        width="32" height="32"></a>
+                <a href="https://linkedin.com/in/godwin-inyang531" target="_blank"><img src="images/linkedin.svg"
+                        alt="Linkedin" width="32" height="32"></a>
+            </div>
+
+            <div>
+                <p>WDD231 Class Project</p>
+                <p>Godwin Inyang</p>
+                <p>&copy; <span id="year"></span> ※ Godwin Inyang ※ Uyo, Nigeria</p>
+                <p id="now"></p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
